@@ -16,7 +16,9 @@ jobs:
       - run: |
           # echo Hello, World!
   cypress_ct:
-    run: npx cypress run-ct
+    executor: my-custom-executor
+    steps:
+      - run: npx cypress run-ct
 workflows:
   my-custom-workflow:
     jobs:
