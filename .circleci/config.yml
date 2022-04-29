@@ -21,4 +21,3 @@ workflows:
       - check_install
       - cypress/run:
           command: npx cypress run-ct
-          parallelism: 4
