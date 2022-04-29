@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="header">
         <p>Hello Cypress</p>
-        <Button />
+        <button>Click Me</button>
       </div>
     </div>
   );
