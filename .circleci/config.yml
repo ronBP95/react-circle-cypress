@@ -18,6 +18,6 @@ jobs:
 workflows:
   my-custom-workflow:
     jobs:
-      - check_install:
+      - check_install
       - cypress/run:
           command: npx cypress run-ct
