@@ -15,8 +15,9 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!
-      - run: npx cypress run-ct
 workflows:
   my-custom-workflow:
     jobs:
       - check_install
+      - cypress/run:
+        command: npx cypress run-ct
