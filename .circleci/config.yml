@@ -19,4 +19,4 @@ workflows:
   my-custom-workflow:
     jobs:
       - check_install
-      - cypress/run
+      - cypress/run-ct
