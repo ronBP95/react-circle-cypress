@@ -20,4 +20,3 @@ workflows:
   my-custom-workflow:
     jobs:
       - check_install
-      - cypress_ct
