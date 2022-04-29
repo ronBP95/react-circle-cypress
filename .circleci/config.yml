@@ -20,4 +20,4 @@ workflows:
     jobs:
       - check_install
       - cypress/run:
-          command: npx cypress run-ct --record --key 10d8a471-d7f2-4701-afd5-691ec248d7bb
+          command: npx cypress run-ct --record
