@@ -7,6 +7,7 @@ it('renders learn react link', () => {
   cy.get('.App').contains('Hello Cypress')
 })
 
-// it('checks to see if the button is working', () => {
-//   cy.get("#button").click()
-// })
+it('checks to see if the button can be clicked and if the alert triggers', () => {
+  mount(<App />)
+  cy.get('.button').click()
+})
