@@ -8,7 +8,6 @@ executors:
         auth:
           username: $DOCKER_HUB_USER
           password: $DOCKER_HUB_PASSWORD
-    parallelism: 4
 jobs:
   check_install:
     executor: my-custom-executor
@@ -22,3 +21,4 @@ workflows:
       - check_install
       - cypress/run:
           command: npx cypress run-ct
+          parallelism: 4
