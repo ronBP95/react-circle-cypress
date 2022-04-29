@@ -1,1 +1,4 @@
-{}
+{
+    "testFiles": "App.test.js",
+    "componentFolder": "src"
+  }
