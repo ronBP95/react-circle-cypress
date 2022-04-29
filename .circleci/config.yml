@@ -18,7 +18,7 @@ jobs:
   cypress_ct:
     executor: my-custom-executor
     steps:
-      - run: npm cypress_test
+      - run: npx cypress run-ct
 workflows:
   my-custom-workflow:
     jobs:
