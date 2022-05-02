@@ -18,17 +18,38 @@ describe('Home Component Check', () => {
     mount(<BrowserRouter><Home /></BrowserRouter>)
     cy.get("#button").click()
   })
+
+  it('checks to see if the nav buttons work', () => {
+    mount(<BrowserRouter><Home /></BrowserRouter>)
+    cy.contains("Home").click()
+    cy.contains("About").click()
+    cy.contains("Calculator").click()
+  })
 });
 
 describe('About Component Check', () => {
   it("checks to see if the about component loads correctly", () => {
     mount(<BrowserRouter><About /></BrowserRouter>)
   })
+
+  it('checks to see if the nav buttons work', () => {
+    mount(<BrowserRouter><Home /></BrowserRouter>)
+    cy.contains("Home").click()
+    cy.contains("About").click()
+    cy.contains("Calculator").click()
+  })
 });
 
 describe('Calculator Component Check', () => {
   it("checks to see if the calculator component loads correctly", () => {
     mount(<BrowserRouter><Calculator /></BrowserRouter>)
+  })
+
+  it('checks to see if the nav buttons work', () => {
+    mount(<BrowserRouter><Home /></BrowserRouter>)
+    cy.contains("Home").click()
+    cy.contains("About").click()
+    cy.contains("Calculator").click()
   })
 
   it("checks to see if 8 x 9 = 72", () => {
