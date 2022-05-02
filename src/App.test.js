@@ -1,18 +1,15 @@
 import React from 'react'
 import { mount } from '@cypress/react'
 import Home from './components/Home'
-import App from './App'
+import { BrowserRouter } from 'react-router-dom'
 
 // Home Component Tests
 
-it('renders learn react link', () => {
-  mount(<Home />)
-  cy.get('.App').contains('Hello Cypress')
-})
+describe('Home Component Check', () => {
+  it("checks to see if the home component loads correctly", () => {
+    mount(<BrowserRouter><Home /></BrowserRouter>)
+  })
+});
 
-it('checks to see if the button can be clicked and if the alert triggers', () => {
-  mount(<Home />)
-  cy.get('.button').click()
-})
 
 
