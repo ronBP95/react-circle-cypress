@@ -19,7 +19,7 @@ const Home = () => {
       <div className="header">
         <h2>Hello Cypress</h2>
         <div className='words'>
-          <p>These are words</p>
+          <p>Welcome to the trees</p>
         </div>
         <p onClick={clickAlert} id="button">Learn More<span id="arrow">➜</span></p>
       </div>
