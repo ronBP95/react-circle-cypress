@@ -1,17 +1,17 @@
 * {
-  margin: 0;
+  margin: 0%;
   padding: 0%;
 }
 
 .App {
   background: url("./assets/cypress.jpg");
   background-size: cover;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100vw;
   font-size: 14em;
   color: orange;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .nav {
@@ -58,16 +58,41 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(0,0,0, 0.5);
+  height: 100vh;
+  width: 100vw;
 }
 
-button {
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 5em;
   width: 10em;
   margin-top: 5em;
-  font-size: 16pt;
+  font-size: 0.095em;
+  cursor: pointer;
+  background: none;
+  transition: 0.3s;
+  border: 1px solid orange;
+}
+
+#arrow {
+  margin-left: 1em;
+  transition: 0.3s;
+}
+
+#button:hover {
+  background-color: black ;
+}
+
+#button:hover #arrow {
+  transform: rotate(90deg);
+  transition: 0.3s;
 }
 
 .words {
   text-align: center;
   font-size: 60pt;
 }
+

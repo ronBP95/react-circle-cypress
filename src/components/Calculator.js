@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import "./styles/Calculator.css"
 
 const Calculator = () => {
     return (
@@ -13,7 +14,7 @@ const Calculator = () => {
           </nav>
         </div>
         <div className="header">
-          Calculator Page
+          Calculator goes here
         </div>
       </div>
     );

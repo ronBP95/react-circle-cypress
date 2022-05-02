@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, 0.5);
+    height: 100vh;
+    width: 100vw;
+}
+
+#calc {
+    padding-top: 100px;
+}
