@@ -4,7 +4,6 @@
 }
 
 .App {
-  display: flex;
   background: url("./assets/cypress.jpg");
   background-size: cover;
   justify-content: center;
@@ -13,6 +12,45 @@
   width: 100vw;
   font-size: 14em;
   color: orange;
+}
+
+.nav {
+  display: flex;
+  font-size: 16pt;
+  align-items: center;
+  justify-content: space-between;
+  background: grey;
+}
+
+#logo {
+  margin-left: 1em;
+  cursor: default;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 16pt;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  width: 20em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: orange;
+  transition: 0.5s;
 }
 
 .header {
@@ -27,4 +65,9 @@ button {
   width: 10em;
   margin-top: 5em;
   font-size: 16pt;
+}
+
+.words {
+  text-align: center;
+  font-size: 60pt;
 }

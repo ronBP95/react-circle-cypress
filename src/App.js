@@ -1,19 +1,22 @@
 import "./App.css"
+import { BrowserRouter as Router, Routes, Route, Link, Switch } from "react-router-dom";
 
-// Alert function for button click
-
-function clickAlert () {
-  window.alert("the button was clicked")
-}
+// component imports
+import Home from "./components/Home"
+import About from "./components/About"
+import Calculator from "./components/Calculator"
 
 function App() {
   return (
-    <div className="App">
-      <div className="header">
-        <p>Hello Cypress</p>
-        <button className="button" onClick={clickAlert}>Click Me</button>
-      </div>
+    <Router>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="calc" element={<Calculator />} />
+      </Routes>
     </div>
+    </Router>
   );
 }
 
